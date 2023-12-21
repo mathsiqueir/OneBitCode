@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Tabelas no HTML</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h1>Criação de Tabelas no HTML</h1>
+    <table>
+        <tr>
+            <th> <!-- table head-->
+                Coluna 1
+            </th>
+            <th>Coluna 2</th>
+        </tr>
+        <tr> <!--table row = tabela em linha-->
+            <td> <!--table data-->
+                Dado 1
+            </td>
+            <td>Dado 2</td>
+        </tr>
+        <tr> <!--table row = tabela em linha-->
+            <td> <!--table data-->
+                Dado 3
+            </td>
+            <td>Dado 4</td>
+        </tr>
+        <hr>
+    </table>
+
+    <h2>Tabelas com Cabeçalho</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>38</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr>
+                <td>Maira</td>
+                <td>18</td>
+                <td>Jovem Aprendiz</td>
+            </tr>
+        </tbody>
+        <table border="1px solid black">
+            <thead>
+                <tr>
+                    <th colspan="2">Informações Pessoais</th>
+                    <th>Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome:</td>
+                    <td>João</td>
+                    <td rowspan="2"> <!--rowspan - quantas linhas ele ocupa na vertical-->
+                        Telefone: 12356</td>
+                </tr>
+                <tr>
+                    <td>Idade</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </table>
+</body>
+
+</html>
