@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*
+border: 2px solid; fica entre margin e padd
+padding: 10px; espaçamento para dentro
+margin: 10px; espaçamento externo
+*/
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif ;
+}
+:root{
+    --cor1: #ff9a6c;
+}
+body{
+    color: #263138;
+}
+header{
+    background-color: var(--cor1);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.398);
+    display: flex;
+    align-items: center; /*alinhar na vertical*/
+    justify-content: space-between; /*movimento horizontal dos itens*/
+    padding: 24px 80px 24px 80px;
+}
+
+header nav a{
+    color: #ffffff;
+    font-weight: 600;
+    /*topo direita baixo esquerda*/
+    padding: 20px;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: brown;
+    transition: all 2s ease-in-out;
+}
+#inicio{
+    display: flex;
+    align-items: center; /*tem como colocar end e start */
+    gap: 20px;
+    padding: 24px 80px 120px 80px;  
+    position: relative; /*elementos serão posicionados em relação ao #inicio*/
+}
+#imgbolota{
+    border-radius: 40%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.281);
+}
+h1, h2{
+    color: var(--cor1);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+.botao{
+    background-color: #ff725e;
+    color: white;
+    text-decoration: none;
+    padding:16px 32px;
+    border-radius: 8px;
+}
+.botao-transparente{
+    background-color: transparent;
+    text-underline-offset: 4px;
+    color: #ff725e;
+    padding:16px 32px;
+    border-radius: 8px;
+}
+.absoluto{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+#clinica{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+#clinica li{
+    margin-bottom: 16px;
+    
+}
+#farmacia{
+    padding: 64px 80px;
+    text-align: center;
+}
+#farmacia img{
+    margin: 64px auto;
+}
+
+#farmacia .paragrafo{
+    max-width: 950px; /*para o paragrafo não ficar muito grande*/
+    margin:0 auto;
+    text-align: left;
+}
+
+#duvidas{
+    display: flex;
+    padding: 64px 80px;
+    gap: 64px;
+    align-items: center;
+}
+.duvida{
+    position: relative;
+}
+.duvida h3{
+    border: 2px solid #ff725e;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+.duvida img{
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+.duvida .paragrafo{
+    border-bottom:1px solid #ff725e ;
+    border-right:1px solid #ff725e ;
+    border-left:1px solid #ff725e;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 24px;
+}
+
+footer{
+    background-color: rgba(255, 152, 108, 0.25);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.217);
+    justify-content: space-between;
+    display: flex;
+    gap: 80px;
+    padding: 64px 80px;
+}
+footer p{
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+footer img,
+footer .titulo{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+footer nav a {
+    color: #263138;
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    
+}
+footer p a{
+    color: #263138;
+    margin-bottom: 16px;
+    text-decoration: none;
+
+}
+#copyright{
+   padding: 25px; 
+   text-align: center;
+   background-color: #263138;
+   color: white;
+
+}
+#copyright a{
+    color: var(--cor1);
+    text-decoration: none;
+
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.inline{
+    display: inline;
+    /*não quebra de linha, largura mínima, não aceita margens verticais(top e bottom) apenas horizontais left e right*/
+    margin-bottom: 200px;
+    margin-left: 30px;
+
+}
+.block{
+    /*quebra linha, largura máxima, aceita margem e preechimento vertical*/
+    display: block;
+    padding: 30px 20px;
+    
+}
+.inline-block{
+    /*não quebra linha*/
+    display: inline-block;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}

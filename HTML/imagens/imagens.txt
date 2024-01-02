@@ -1,0 +1,13 @@
+jpeg: formato de mais qualidade, porém mais pesado
+
+PNG: formato inferior ao JPEG, mas que pode ser comprimido mantendo a qualidade, melhor sobreposição em sites pois tem o fundo transparente
+
+WEBP: formato criado especificamente para a web pelo Google, oferece o melhor equilibrio entre qualidade e tamanho reduzido
+
+SVG: formato usado para vetores, que são imagens geométricas super leves e que podem escalar com o tamanho( imagens feitas através de calculo)
+
+
+tamanho de imagem
+
+se necessário, use o atributo "srcset"( conjunto de fontes para definir tamanhos diferentes para as imagens)
+para definir diferentes versões da imagem para diferentes dipositivos

@@ -1,0 +1,9 @@
+diretório raiz
+onde fica todos os arquivos do seu local de diretório raiz que é a pasta aberta no VScode
+diretório raiz
+
+URL absoluta é o caminho completo
+
+
+
+URL relativa é o caminho relativo a página atual

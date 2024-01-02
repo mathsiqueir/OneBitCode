@@ -1,0 +1,43 @@
+main{
+    position: relative;
+    /*position relative 
+    no main com o div absolute você segura o elemento dentro desse elemento, mas tem que ser o elemento pai em relação ao filho*/
+}
+
+.p-static{
+    /*O elemento deve seguir o posicionamento padrao do HTML ele não permite que você altere o posicionamento do elemento(top bottom left right)*/
+    position: static;
+    top: 10rem;
+    bottom: 5rem;
+    height: 5rem;
+}
+.p-relative{
+    /*o elemento mantém padrão até você usar códigos para alterar o elemento e ele passa por cima de outros elementos*/
+    position: relative;
+    top: -2rem;
+    width: 50%;
+    margin: 0 auto;
+    /*possiveis aplicações*/
+}
+.p-absolute{
+    /*ele sai do fluxo do elemento e permite que você posicione o elemento de forma absoluta*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*bom para posicionar elemento de menu */
+}
+.p-fixed{
+    /*ele se mantém fixo na mesma posição,
+    bom para menus laterais*/
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    /*mas ele não respeita o cotainer como o absolute*/
+}
+.p-sticky{
+    /*ele fica grudado na imagem, mas depende das propriedades auxiliares*/
+    position: sticky;
+    top: 0rem;
+    display: f;
+    /*bom para usar em tabelas para sabermos os valores que estamos atribuindo a cada valor*/
+}

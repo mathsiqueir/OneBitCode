@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/*seletor  :nth-child()    n(qualquer numero) th  */
+
+/*li:nth-child(2){
+    color: #f00;
+}
+
+/*li:nth-child(2n){ /*a cada dois elementos
+    color: #14d;
+}
+/*li:nth-child(3n){
+    color: #f70;
+}*/
+
+/*pseudo-elementos -> ::before e ::after*/
+li::before{
+    content: "(antes) ";
+    
+}
+li::after{
+    content: " (depois)";
+}
+li:first-child{
+    color: #ff5e00;
+}
+li:last-child {
+    color: #e3c;
+}
+li:not(:first-child){
+    color: #0bb;
+}
+
+/*li:nth-child(2n-1){ Elementos ímpares
+    color: #0f7;
+}
+li:nth-child(3n){  even -> par  odd -> ímpar
+    color: #906;
+}
+li:hover{
+    background-color: #777;
+    cursor: pointer;
+    width: fit-content;
+}
+input:focus{
+    background-color: #f00;
+}*/

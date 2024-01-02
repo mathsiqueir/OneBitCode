@@ -1,0 +1,12 @@
+.verde{
+    color: #1b8e23;
+}
+body > h1{
+    color: #0f0 ;
+}
+h1{
+    color: #f00 !important;
+}
+#laranja{
+    color: #ffa500;
+}
