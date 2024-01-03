@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    margin-bottom: 100px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 6rem;
+}
+body
+img{
+    max-width: 100%;
+    display: block;
+}
+.header{
+    background-color: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left: 1rem;
+}
+.menu li a{
+    display: block;
+    padding: 0.5rem;
+}
+
+/* CSS FLEXBOX 1*/
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex > div{
+    flex: 1 1 200px;
+    /*espanda/possa diminuir / base minima, se não tiver vai quebrar, mas tem que colocar o flex-wrap para ele poder quebrar*/
+
+    margin: 0.6rem;
+}
+
+/*CSS GRID 1*/
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    gap: 0.8rem;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    medida fracional dividindo cada um em 33% 33% 33%*/
+}
+.grid1 > div:nth-child(n + 4){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6 rem;
+    align-items: center;
+}
+.grid1 > div.anuncio{
+    grid-column: 1; /*fica na primeira coluna*/
+    grid-row: 2 / 5; /*ele vai ocupar as linhas 2 até a 5*/
+    border-top: 10px solid tomato;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .grid1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid1 > div:nth-child(n + 4){
+        display: block;
+    }
+    .grid1 > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+    }
+}
