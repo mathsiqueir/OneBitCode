@@ -6,7 +6,6 @@ margin: 10px; espaçamento externo
 */
 *{
     box-sizing: border-box;
-
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif ;
@@ -113,6 +112,9 @@ h1, h2{
 .duvida{
     position: relative;
 }
+.fundo-verde{
+    background-color: green;
+}
 .duvida h3{
     border: 2px solid #ff725e;
     border-radius: 8px;
@@ -130,9 +132,21 @@ h1, h2{
     border-left:1px solid #ff725e;
     border-radius: 0 0 8px 8px;
     margin-top: -8px;
-    padding: 24px;
+    padding: 0px 24px; /*se tiver dois valores vai fazer vertical e horizontal*/
+    /*estilizando para otimização atravez do javaScript*/
+    height: 0;
+    opacity: 0;
+    overflow: hidden; /*transbordamento do texto, ele está saindo da caixa*/
+    transition: .5s ease-in-out;
+    ani
 }
-
+.duvida.ativa .paragrafo{
+    height: auto;/*quebrada a linha, agora é possivel dar altura e mostrar todo o conteúdo*/
+    
+    padding: 24px;
+    opacity: 1;
+    
+}
 footer{
     background-color: rgba(255, 152, 108, 0.25);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.217);
