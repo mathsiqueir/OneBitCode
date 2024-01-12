@@ -16,7 +16,7 @@ const subtrair = function subtracao(a,b){
     return a - b
 }
 
-//console.log(subtrair(43,52))
+console.log(subtrair(43,52))
 
 operacao = function subtracao(a,b){
     return a - b
