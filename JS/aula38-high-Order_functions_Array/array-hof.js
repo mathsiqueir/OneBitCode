@@ -15,14 +15,14 @@ const personagens = [
 
 //const nomes = []
 
-/*for(let i=0; i< personagens.length;i++){
+for(let i=0; i< personagens.length;i++){
     nomes.push(personagens[i].nome)
 }*/
 
 
 //Como utilizar o map
 
-/*const nomes = personagens.map(function(personagem){
+const nomes = personagens.map(function(personagem){
     return personagem.nome
 })
 
@@ -33,22 +33,22 @@ console.log(nomes)*/
 
 //comportamento
 
-/*const orcs = []
+const orcs = []
 
 for (let i = 0; i < personagens.length; i++) {
     if (personagens[i].raca == 'Orc'){
         orcs.push(personagens[i])
 
     }
-    
-}*/
+     
+}
 
 
-/*const orcs = personagens.filter(function(familia){
+const orcs = personagens.filter(function(familia){
     return familia.raca === "Orc"
 })
 console.log(orcs)
-*/
+
 
 
 //reduce 
@@ -57,25 +57,25 @@ console.log(orcs)
 
 //comportamento
 
-/*let somaNivel = 0
+let somaNivel = 0
 for (let i = 0; i < personagens.length; i++) {
     somaNivel += personagens[i].nivel;
     
 }
-console.log(somaNivel)*/
+console.log(somaNivel)
 
-/*a function(valor_anterior para somar, )*/ 
-/*
+//a function(valor_anterior para somar, )*/ 
+
 const nivelTotal = personagens.reduce(function(valorAcumulado, personagem){ //dar um return na função para ela passar o valor adiante e vai somando de acordo com o dado que você colocou para ele somar nós colocamos um Number(personagem.nivel)
     return valorAcumulado + personagem.nivel
-},0 /*0 aqui para dizer ao reduce que o primeiro valorAcumulado é == 0 )
+},0 ) //aqui para dizer ao reduce que o primeiro valorAcumulado é == 0 )
 
 console.log(nivelTotal)
 
 //transformação mais elaborada feita com array 
 //vamos pegar o array e transformar ele em um objeto que vai agrupar os personagens por raça
 
-/*const racas = personagens.reduce(function(valorAcumulado, personagem)
+const racas = personagens.reduce(function(valorAcumulado, personagem)
 {
     if(valorAcumulado[personagem.raca]){//se existir essa chave
         valorAcumulado[personagem.raca].push(personagem)
@@ -83,11 +83,11 @@ console.log(nivelTotal)
         valorAcumulado[personagem.raca]=[personagem] //personagem atual
     }
         return valorAcumulado
-},{}/*vai começar vazio )
-
+},{} )//vai começar vazio
+''
 console.log(racas)
 
-*/
+
 //Sort
 //metodo para ordenar os arrays 
 //sem parametro sort() vai organizar de forma alfabética
