@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,, initial-scale=1.0">
+    <title>Escalação de um time</title>
+</head>
+
+<body>
+    <h1>Escalação do time</h1>
+    <hr>
+
+    <h2>Escalar Jogador</h2>
+
+    <p>
+        <label for="position">Posição:</label>
+        <select name="position" id="position">
+           <option value="Atacante">Atacante</option> 
+           <option value="meio-Campista">meio-Campista</option> 
+           <option value="Zagueiro">Zagueiro</option>
+           <option value="Goleiro">Goleiro</option>
+        </select>
+
+        <br> 
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name"><br>
+       
+        <label for="number">Número:</label>
+        <input type="number" name="number" id="number"><br>
+        <button onclick="addPlayer()">Escalar Jogador</button>
+    </p>
+    <h2>Remover Jogador</h2>
+
+    <p>
+        <label for="numberToRemove">Número</label>
+        <input type="text"  name="numberToRemove" id="numberToRemove">
+        <br>
+        <button onclick="removePlayer()">Remover Jogador</button>
+    </p>
+
+    <h2>Escala do time</h2>
+
+    <ul id="teamList">
+       
+    </ul>
+    
+    <script src="index1.js"></script>
+</body>
+
+</html>
