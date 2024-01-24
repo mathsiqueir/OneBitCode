@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando estilos com JavaScript</title>
+    
+    <style>
+        :root{
+            --dark:#212529;
+            --light:#f1f5f9;
+        }
+        .is-light{
+            background-color: var(--light); color: var(--dark);
+        }
+        .is-dark{
+            background-color: var(--dark); color: var(--light);
+        }
+    </style>
+    <script src="index.js" defer></script>
+</head>
+<!-- a mudança será aplicada no body o botão mudará a clas do body-->
+<body class="is-light">
+    <h1>Manipulando estilos com JavaScript</h1>
+    <hr>
+    <button id="lightBtn">Tema Claro</button >
+    <button id="darkBtn">Tema Escuro</button>
+    <button id="switchBtn">Alternar tema Claro/Escuro</button>
+    <br>
+    <h2>titulo da página</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ducimus nesciunt dolores asperiores impedit aspernatur similique, quo fuga corporis nemo eligendi unde itaque ab magnam excepturi iusto consectetur. Dolores, dolore.</p>
+    
+
+</body>
+</html>
