@@ -1,0 +1,15 @@
+@charset 'uft-8';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-transform: uppercase;
+}
+header{
+    display: block;
+    position: relative;
+    margin: auto;
+}
