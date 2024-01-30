@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 50vh;
+        }
+        h1{
+            color: brown;
+            margin-top: 4rem;
+            border: 0.3rem solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+    <p style="color: #00f; margin-left: 3rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti labore libero blanditiis incidunt? </p>
+    <script>
+        let p = document.querySelector('p')
+        console.log(p.style.color)
+        //só para elementos que estão dentro do p no seletor e não do seu style no css
+        console.log(p.style.marginTop)
+
+        let h1 = document.querySelector('h1')
+
+        let propriedades = getComputedStyle(document.querySelector('h1'))
+        console.log(propriedades.marginTop)
+    </script>
+</body>
+</html>

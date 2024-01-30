@@ -1,4 +1,4 @@
-// parametro é a entrada da função
+'// parametro é a entrada da função
 
 function dobro(/*parameto vem aqui*/ x ){
     alert("O dobro de "+ x+" é "+(x*2))

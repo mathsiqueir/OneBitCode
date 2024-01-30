@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class list Class name</title>
+    <style>
+        body{
+            margin-top: 50vh;
+        }
+        .p-1{
+            background-color: yellow;
+        }
+        .p-2{
+            background-color: rgb(28, 189, 66);
+        }
+        .espaco{
+            padding: 0.8rem;
+        }
+        .espaco2{
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, sunt impedit cum voluptates eos quidem dicta illo dolorem sint repudiandae. Eum officiis eos vitae atque iure sit voluptate? Impedit, soluta.</p>
+    <script>
+        let p = document.querySelector('p')
+        p.className = 'p-1 '
+        
+        let classes = p.classList
+        console.log(p.className)
+        console.log(classes)
+
+        // p.classList.add('p-2')
+        // p.classList.add('espaco2')
+       // p.classList.remove('espaco')
+
+        //adicionar e remover a classe
+       // p.classList.toggle('espaco')
+
+       if(p.classList.contains('espaco')){
+        console.log('tem espaco')
+        }else{
+            console.log("não tem espaco")
+        }
+
+    </script>
+</body>
+</html>

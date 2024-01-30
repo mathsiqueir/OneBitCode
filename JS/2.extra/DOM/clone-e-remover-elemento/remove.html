@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> clone and remove element</title>
+    <style>
+        body{
+            margin-top: 50vh;
+        }
+        .container{
+            border: 0.5rem solid black;
+            margin: 2.2rem;
+            padding: 2.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <p>Parágrafo dentro do DIV</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+
+    <script>
+        
+        //clonarr elementes
+        // let div2 = document.querySelector('#container').cloneNode(false)
+        // document.querySelector('#container').after(div2)
+
+        //remover elementos
+        // let div = document.querySelector('#container').remove()
+
+        document.querySelector('#container > ul > li:last-child').remove()
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread</title>
+</head>
+<body>
+<pre>
+Operador permite espalhar (Spread) os elementos de um objeto iterável, como um array ou uma string
+utiliza três pontos: ...iterableObject
+
+
+serve para 
+
+passar vários parâmetros de uma única vez
+colonar objetos iteráveis
+fazer manipulações sem afetar o objeto orginal
+
+TRANSFORMAR STRINGS EM ARRAY
+    let str = "Olá,Mundo"
+    let arr = [4,2,8,3,1]
+    console.log(...str[4])
+    console.log(...arr)
+</pre>
+<script>
+    const towns = ['Prontera', 'Izlude', 'Payon', 'Alberta', 'Geffen', 'Morroc']
+//    console.log(towns)
+//(6)['Prontera', 'Izlude', 'Payon', 'Alberta', 'Geffen', 'Morroc']
+ //   console.log(...towns)
+//Prontera Izlude Payon Alberta Geffen Morroc
+ //   console.log(...towns[0])
+//P r o n t e r a
+ //   console.log(towns[0])
+//Prontera
+
+const townsCopy = towns
+
+ townsCopy.pop()
+ townsCopy.push('Siqueira')
+// console.log(townsCopy.slice(0, -1))
+// //não remove elementos do inicio e remove do fim 
+// console.log(townsCopy.splice(0,5))
+// //começo deletando do elemento 0 e vou deletar a quantidade solicitada
+// console.log(towns)
+console.log(towns, townsCopy)
+
+const townsClone = [...towns]
+townsClone.push('Julia')
+
+console.log({towns, townsCopy, townsClone})
+
+const townsObj = {...towns}
+const townsObj1 = [...towns]
+
+console.log(townsObj, townsObj1)
+
+
+</script>
+</body>
+</html>

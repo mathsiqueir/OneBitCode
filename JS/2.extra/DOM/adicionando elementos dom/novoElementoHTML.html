@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ppt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caixa {
+            margin-top: 5rem;
+            padding: 1rem;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .alerta {
+            padding: 1rem;
+            text-align: center;
+            background-color: rgba(255, 0, 0, 0.633);
+            color: white;
+            font-weight: bolder;
+            text-shadow: 1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caixa">
+        <p>Nesta div apenas existe um parágrafo</p>
+    </div>
+    <br><br><br>
+    <button id="Btn">clickar</button>
+    <button id="BtnRemove">Remover</button>
+    <script>
+        document.getElementById('Btn').addEventListener('click', alert)
+        //criar novo elemento
+        function alert() {
+            let novoElemento = document.createElement('p')
+            novoElemento.className = "alerta"
+            novoElemento.innerText = "Está é uma mensagem de alerta"
+
+            //adicionar novo elemento ao div existente
+            let elemento = document.querySelector('.caixa')
+            elemento.appendChild(novoElemento)
+        }
+        
+
+    </script>
+</body>
+
+</html>

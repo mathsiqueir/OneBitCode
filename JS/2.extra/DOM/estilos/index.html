@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos</title>
+    <style>
+        body{
+            margin-top: 50vh;
+        }
+        .p-1{
+            background-color: yellow;
+            columns: black;
+            padding: 0.8rem;
+            border: 0.7rem groove brown;
+            
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat dolores, sapiente eos perspiciatis cumque.</p>
+
+    <script>
+        let p = document.querySelector('p')
+        p.className = 'p-1'
+        
+        p.style.backgroundColor = '#394236'
+        p.style.border = '0.5rem inset #541272 '
+        p.style.cssText =' background-color: #3468a5; color: #fff; border: 1rem groove #ddd'
+        
+    </script>
+</body>
+</html>

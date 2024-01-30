@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         margin-top: 50vh;
+        }
+         .container{
+             border: 0.5rem solid rgb(96, 168, 186) ;
+             padding: 2.2rem;
+             margin: 2.2rem;
+         }
+         p{
+             background-color: rgba(32, 101, 13, 0.815);
+             color: white;
+         }
+     </style>
+</head>
+<body>
+    <div class="container">
+        DENTRO DO DIV
+    </div>
+    <script>
+        let div = document.querySelector('.container')
+
+        let p1 = document.createElement('p')
+        let p2 = document.createElement('p')
+        let p3 = document.createElement('p')
+        let p4 = document.createElement('p')
+        p1.innerText ='Parágrafo 1'
+        p2.innerText ='Parágrafo 2'
+        p3.innerText ='Parágrafo 3'
+        p4.innerText ='Parágrafo 4'
+        //insertAdjacentText
+        div.insertAdjacentElement('beforebegin', p1)
+        div.insertAdjacentElement('afterbegin', p2)
+        div.insertAdjacentElement('beforeend', p3)
+        div.insertAdjacentElement('afterend', p4)
+    </script>
+</body>
+</html>
