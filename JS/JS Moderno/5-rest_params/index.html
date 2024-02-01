@@ -33,14 +33,14 @@
             return sum
         }
 
-        function sum1(...numbers) {
+        function sum(param,...numbers ) {
             return numbers.reduce((accum, num) => accum + num, 0)
         }
-        function sum(...numbers){
-            return numbers.reduce(function(accum,num){
-            return num +=accum
-            },0)
-        }
+        // function sum(...numbers){
+        //     return numbers.reduce(function(accum,num){
+        //     return num +=accum
+        //     },0)
+        // }
         console.log(sum(1,1))
         
         console.log(sum1([2,3,4]))
