@@ -2,4 +2,5 @@
     "editor.lineHeight": 1.8,
     "editor.fontSize": 14,
     "editor.fontFamily": " 'jetBrains Mono'",
+    "liveServer.settings.port": 5501,
 }
