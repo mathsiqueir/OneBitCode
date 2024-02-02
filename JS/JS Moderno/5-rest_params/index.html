@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>rest params</title>
+    </head>
+
+<body>
+    <pre>
+ É uma técnica que permite a uma função receber qualquer número de parametros
+ também permite manipular esses parâmetros como um array na definição
+ da funcão(o que o diferencia do objeto arguments)
+
+ exemplo
+</pre>
+    <script>
+        //para montar um arr faria dessa forma
+        // function sum(arr){}
+        // console.log(sum([]))
+        
+        function sum1(num){
+            let sum = 0
+            num.forEach(element => {
+                sum += element
+            });
+            return sum
+        }
+
+        function sum(param,...numbers ) {
+            return numbers.reduce((accum, num) => accum + num, 0)
+        }
+        // function sum(...numbers){
+        //     return numbers.reduce(function(accum,num){
+        //     return num +=accum
+        //     },0)
+        // }
+        console.log(sum(1,1))
+        
+        console.log(sum1([2,3,4]))
+    </script>
+</body>
+
+</html>
