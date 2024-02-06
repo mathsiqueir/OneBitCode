@@ -1,0 +1,16 @@
+{
+  "name": "20-npx-npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "hello": "hello-world-npm",
+    "start": "node index.js"
+  },
+  "author": "matheus",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "hello-world-npm": "^1.1.1"
+  }
+}
