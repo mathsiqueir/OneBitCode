@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coalescência nula</title>
+</head>
+<body>z
+<pre>
+    é um Recurso moderno 
+    Operador lógico que retorna o seu operand do lado direito quando 
+    o seu operador do lado esquerdo é nullish,
+    caso contrário, ele retorna o seu operando do lado esquerdo
+
+    Utiliza dois pontos de interrogação "??"
+
+    vale destacar que ele é diferentedo opeador lógico OU("||"), 
+    que da curto-circuito em expressões falsy(por exemplo, número 0)
+    
+    pode ser usado para operações lógicas e também para atribuições de 
+    valores padrão através de short-circuit evaluation (avalição de curto-circuito)
+    
+
+    TESTE Do CURSO
+    const array = ['matheus', 'julia','carla','elisa','silesia']
+    const element = 'elemento novo'
+    const newArray = [...array, element]
+
+    console.log(newArray)
+    console.log(element)
+
+
+</pre>
+<script>
+    const a1 = 0
+    const b2 = null
+    const c2 = "teste"
+    //js vai avaliar os valores e o valor verdadeiro que ele encontrar vai dar um curto-circuito(parar o procurar)
+    ///por ser um operador lógico ele vai considerar 0 e null como FALSO
+    //entao vai retornar o teste
+    console.log(a1|| b2 || c2)
+    //0 é um valor então ele vai retornar o 0, mas se retirar o 0 o null não é um valor aplicativel então o teste aparecerá 
+    //se o esquerdo for falso ele retorna o da esquerda e vai faznedo testes até ser verdadeiro
+    console.log(a1 ?? b2 ?? c2)
+    console.log('----------------------------------------')
+    let a = 0
+    //como A é igual a 0 o operador lógico da ela como falsa então retorna o 42, mas se o valor de A fosse 1 retornaria o A
+    let c = a || 42 
+    console.log({a, c})
+    //na coalescencia nula ele vai checar se o valor é nullish então o 0 tem valor 
+    c = a ?? 42
+    console.log({a, c})
+    c = null ?? 42
+    console.log({a, c})
+
+    let person = {
+        name: "John DOE",
+        age: 32
+    }
+    let x = 0
+    x = person.data?.age
+    console.log(x)
+</script> 
+</body>
+</html>
