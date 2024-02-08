@@ -1,0 +1,4 @@
+depois de executar o webpack é possivel apagar o node_modules pois foi tudo compactado
+
+//para utilizar o webpack basta instalar
+npm i webpack

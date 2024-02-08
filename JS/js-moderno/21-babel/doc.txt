@@ -1,0 +1,19 @@
+comece com (npm init) para armazenar as informações e criar 
+depois instale o babel
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+
+para executa-lo basta
+npx babel <nome_arquivo>
+
+para criar outro arquivo compativel com os navegadores
+npx babel <nome_arquivo> --out-file <nome_novo_arquivo>
+
+mas ainda não está convertido para a versão mais antiga
+npx babel index.js --out-file dist.js --presets=@babel/preset-env
+ agora foi convertido
+
+crie uma pasta SRC(source)
+para colocar os javaScripts feitos por você depois use esse comando
+
+ npx babel src --out-dir dist --presets=@babel/preset-env
+ para criar uma pasta que vai adicionar seus códigos no formato que todos navegadores aceitem

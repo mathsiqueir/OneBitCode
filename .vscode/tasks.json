@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "hello",
+			"path": "JS/js-moderno/20-npx-npm",
+			"problemMatcher": [],
+			"label": "npm: hello - JS/js-moderno/20-npx-npm",
+			"detail": "hello-world-npm"
+		}
+	]
+}
