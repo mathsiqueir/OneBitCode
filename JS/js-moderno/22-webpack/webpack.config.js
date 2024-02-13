@@ -1,4 +1,4 @@
-const path = require('path') //modulo para trabalhar com caminhos
+
 
 module.exports = {
     entry:{
