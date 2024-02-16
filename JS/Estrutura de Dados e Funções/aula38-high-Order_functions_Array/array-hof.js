@@ -17,7 +17,7 @@ const personagens = [
 
 for(let i=0; i< personagens.length;i++){
     nomes.push(personagens[i].nome)
-}*/
+}
 
 
 //Como utilizar o map
@@ -26,14 +26,14 @@ const nomes = personagens.map(function(personagem){
     return personagem.nome
 })
 
-console.log(nomes)*/
+console.log(nomes)
 
 //filter
 //filtrar elementos de um array
 
 //comportamento
 
-const orcs = []
+
 
 for (let i = 0; i < personagens.length; i++) {
     if (personagens[i].raca == 'Orc'){
