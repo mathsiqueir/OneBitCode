@@ -1,4 +1,5 @@
 class Book{
+    //constructor é um método
     constructor(title){
         this.title = title
         this.published = false
