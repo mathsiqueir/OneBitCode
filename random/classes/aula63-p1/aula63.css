@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin: 0 auto;
+    flex-direction: column;
+    
+}
+.campoForm{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.campoForm input{
+    background-color: #eee;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+}
+#btn{
+    display: flex;
+    margin: 1rem 0 1rem 0;
+    justify-content: center;
+    width: 200px;
+    cursor: pointer;
+    
+}
+.carros{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.427);
+    width: 95vw;
+    padding: 1rem;
+
+}
