@@ -1,0 +1,26 @@
+acessadores que são um para definir a forma como acessamos uma propriedade de um objeto
+objeto pessoa tem o atributo nome
+<pessoa.nome>
+
+a gente reatribui o valor de pessoa.nome
+<pessoa.nome> = 'lucas'
+
+com o GET podemos modificar a forma como a propriedade é lida
+
+        language: "en",
+        get lang() {
+            return this.language;
+
+com o SET podemos alterar como a propriedade é alterada via atribuição
+        set lang(lang) {
+            this.language = lang;
+        }
+        };
+        // Set an object property using a setter:
+        person.lang = "en";
+
+
+
+também conhecidos como  * getters setters * 
+
+ex:

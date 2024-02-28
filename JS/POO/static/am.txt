@@ -1,0 +1,22 @@
+==============fundamentos==============
+class Carro {
+  constructor(marca, modelo) {
+    this.marca = marca;
+    this.modelo = modelo;
+  }
+  dirigir() {}
+}
+let meuCarro = new Carro('Toyota', 'Corolla');
+
+-Carro é a classe, 
+-marca e modelo são atributos
+-dirigir é um método
+-meuCarro é uma instância da classe Carro.
+
+atributos e métodos Estáticos
+    são atributos e métodos definidos em uma classe que não dependem de uma instância para serem utilizados
+
+    são acessados diretamento ela classe ao invés por uma instância
+
+Exemplos
+    uma classe precisa definir um atributo global(mesmo para todas as instâncias)
