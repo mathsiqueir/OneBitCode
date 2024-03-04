@@ -1,0 +1,1 @@
+tratamento de erros, como lança-los no js
