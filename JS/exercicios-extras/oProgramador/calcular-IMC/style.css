@@ -31,3 +31,7 @@ button{
     background-color: #a8d5ab;
     border-radius: 0.5rem;
 }
+span > .result{
+    height: 200px;
+    width: 250px;
+}
