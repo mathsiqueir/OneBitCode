@@ -17,31 +17,76 @@ function asyncSubtract(a, b) {
         }
     })
 }
-//quero calcular uma soma e subtração, se a duas derem certos
-//all para executar varias promises juntas
-//Promise.all
+// quero calcular uma soma e subtração, se a duas derem certos
+// all para executar varias promises juntas
+//Promise.all()
 
-// const sumResult = asyncSum(50,33)
-// const subtractResult = asyncSubtract(50,33)
+const sumResult = asyncSum(50, 33)
+const subtractResult = asyncSubtract(50, 33)
 
-// Promise.all([sumResult,subtractResult]).then(results =>{
-//         console.log(results)
-// }).catch(err =>{
-//     console.log(err)
-// })
+Promise.all([sumResult, subtractResult]).then(results => {
+    console.log(results)
+}).catch(err => {
+    console.log(err)
+})
 
-const numbers = [4,9,5,13,77,true]
-function asyncSquare(x){
-    return new Promise((resolve, reject) =>{
-        if(typeof x !== 'number'){
+const numbers = [4, 9, 5, 13, 77, true]
+function asyncSquare(x) {
+    return new Promise((resolve, reject) => {
+        if (typeof x !== 'number') {
             reject(false)
-        }else{
+        } else {
             resolve(x * x)
         }
     })
 }
-Promise.all(numbers.map(number => asyncSquare(number))).then(squares =>{
+Promise.all(numbers.map(number => asyncSquare(number))).then(squares => {
     console.log(squares)
-}).catch(err =>{
+}).catch(err => {
     console.log(err)
-})
+}
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

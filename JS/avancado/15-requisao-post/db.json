@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Olá, mundo!",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": 2,
+      "title": "Requisições POST com Javascript",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": "744c",
+      "title": "s",
+      "author": "",
+      "content": ""
+    },
+    {
+      "id": "5a7f",
+      "title": "Nada pode me ferir",
+      "author": "David Goggins",
+      "content": "Voce eh mais forte do que acredita ser, STAY HARD!"
+    },
+    {
+      "id": "11df",
+      "title": "o sucesso e treinavel",
+      "author": "Joel jota",
+      "content": "ninguem nasce com o sabendo fazer algo nos aprendemos atraves do nosso esforco e compromisso"
+    }
+  ]
+}

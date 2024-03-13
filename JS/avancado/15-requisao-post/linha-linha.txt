@@ -1,0 +1,57 @@
+function renderArticle(articleData) {: Aqui, estamos declarando uma função chamada renderArticle que recebe um parâmetro articleData.
+
+const article = document.createElement('article'): Cria um novo elemento HTML <article>.
+
+article.classList.add('article'): Adiciona a classe CSS "article" ao elemento <article>.
+
+article.id = article-${articleData.id}``: Define o ID do elemento <article> com base no ID do artigo passado em articleData.
+
+const title = document.createElement('h3'): Cria um novo elemento HTML <h3> para o título do artigo.
+
+title.classList.add('article-title'): Adiciona a classe CSS "article-title" ao elemento <h3> do título.
+
+title.textContent = articleData.title: Define o texto do título com base no título do artigo passado em articleData.
+
+const content = document.createElement('div'): Cria um novo elemento HTML <div> para o conteúdo do artigo.
+
+content.classList.add('article-content'): Adiciona a classe CSS "article-content" ao elemento <div> do conteúdo.
+
+content.innerHTML = articleData.content: Define o conteúdo HTML do artigo com base no conteúdo passado em articleData.
+
+const author = document.createElement('div'): Cria um novo elemento HTML <div> para o autor do artigo.
+
+author.classList.add('article-author'): Adiciona a classe CSS "article-author" ao elemento <div> do autor.
+
+author.textContent = articleData.author: Define o texto do autor com base no autor passado em articleData.
+
+article.append(title, author, content): Adiciona os elementos <h3>, <div> do autor e <div> do conteúdo como filhos do elemento <article>.
+
+document.querySelector('#articles').appendChild(article): Adiciona o elemento <article> ao elemento com ID "articles" no documento HTML.
+
+async function fetchArticles() {: Declara uma função assíncrona chamada fetchArticles.
+
+const articles = await fetch("http://localhost:3000/articles").then((res) => res.json()): Faz uma requisição assíncrona para obter os artigos do servidor local.
+
+articles.forEach(renderArticle): Para cada artigo retornado, chama a função renderArticle para renderizá-lo na página.
+
+document.addEventListener('DOMContentLoaded', () => { fetchArticles() }): Quando o conteúdo HTML é completamente carregado, chama a função fetchArticles para carregar e exibir os artigos.
+
+const form = document.querySelector('form'): Seleciona o elemento <form> no documento HTML.
+
+form.addEventListener('submit', async (ev) => {: Adiciona um ouvinte de evento para o evento de envio do formulário.
+
+ev.preventDefault(): Previne o comportamento padrão de enviar o formulário, que seria recarregar a página.
+
+const articleData = { ... }: Cria um objeto articleData com os valores dos campos do formulário.
+
+const response = await fetch('http://localhost:3000/articles', { ... }): Envia uma requisição assíncrona para salvar o novo artigo no servidor.
+
+const savedArticle = await response.json(): Espera pela resposta do servidor e a converte para o formato JSON.
+
+form.reset(): Reseta o formulário para limpar os campos após o envio.
+
+renderArticle(savedArticle): Renderiza o novo artigo na página.
+
+console.log(savedArticle): Exibe o objeto do novo artigo no console para depuração.
+
+Esse código cria uma página web simples para exibir e adicionar artigos, utilizando JavaScript para manipular o DOM e interagir com um servidor local.
