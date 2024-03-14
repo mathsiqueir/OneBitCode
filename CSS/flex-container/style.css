@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* como os itens são renderizados, faz um alinhamento bem melhor */
+}
+
+.container {
+    background-color: darkgray;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;/*direction*/
+    gap: 1rem; /*espacamento entre os itens*/
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    border: 0.2rem solid black;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
