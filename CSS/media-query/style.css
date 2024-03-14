@@ -1,0 +1,48 @@
+body{
+    background-color: #303030;
+}
+h2{
+    color: white;
+}
+.img-content{
+    display: block;
+    width: 765px;
+    height: 400px;
+    margin: auto;
+    
+}
+.text-content{
+    font-size: 1.5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+@media (max-width:795px) {
+    .img-content{
+        width: 95vw;
+        height: auto;
+    }
+    .text-content{
+        font-size: 1rem;
+    }
+}
+/*usar px nao eh responsivo*/
+@media (max-width:510px) {
+    .img-content{
+        width: 90vw;
+        height: auto;
+    }
+    .text-content{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width:410px) {
+    .img-content{
+        width: 90vw;
+        height: auto;
+    }
+    .text-content{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+}
