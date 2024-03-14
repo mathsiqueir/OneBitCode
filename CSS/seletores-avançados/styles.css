@@ -16,6 +16,7 @@
 /*pseudo-elementos -> ::before e ::after*/
 li::before{
     content: "(antes) ";
+    flex
     
 }
 li::after{
