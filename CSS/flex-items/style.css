@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* como os itens são renderizados, faz um alinhamento bem melhor */
+}
+
+.container {
+    background-color: darkgray;
+    min-height: 100vh;
+    display: flex;
+    gap:  0 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    /* width: 200px; */
+    height: 200px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+}
+
+.item1{}
+.item2{}
+.item3{}
