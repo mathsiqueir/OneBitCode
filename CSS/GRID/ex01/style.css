@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* como os itens são renderizados, faz um alinhamento bem melhor */
+}
+
+.container {
+    background-color: darkgray;
+    min-height: 100vh;
+    display: grid;
+    /* definicao das colunas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem 1rem;
+    grid-template-rows: repeat(3,1fr);
+
+    grid-auto-rows: minmax(210px, 100%);
+}
+
+.item {
+    padding: 0.8rem;
+    border: 2px solid black;
+    background-color: white; 
+}
