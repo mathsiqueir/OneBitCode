@@ -1,11 +1,11 @@
-const spaceship = {
-    name: 'X-wing',
-    speed: 0,
+const setPilot = (newPilot: string, spaceship: { name?: string; pilot: string; speed?: number; inMission?: boolean; }) => {
+    spaceship.pilot = newPilot;
 }
 
-function accelerate(spaceship: { name: string; speed: number }, speed: number){
-    spaceship.speed = speed
-
-    
+const accelerate1 = (targetSpeed: number, spaceship: { name?: string; pilot?: string; speed: any; inMission?: boolean; }) => {
+    spaceship.speed = targetSpeed;
 }
-accelerate(spaceship,50)
+
+const sendToMission = (spaceship: { name?: string; pilot?: string; speed?: number; inMission: any; }) => {
+    spaceship.inMission = true;
+}
