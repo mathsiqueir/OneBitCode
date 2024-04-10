@@ -1,0 +1,21 @@
+mkdir exercicio-declarando-tipos && cd exercicio-declarando-tipos
+mkdir src public
+touch src/index.ts public/index.html
+npm init -y
+npm install typescript --save-dev
+
+
+"scripts": {
+  "tsc-watch": "tsc"
+},
+
+
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "outDir": "public/dist",
+    "watch": true
+  }
+}
+
+npm run tsc-watch
