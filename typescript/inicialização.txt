@@ -6,12 +6,12 @@ npm install typescript --save-dev
 
 
 "scripts": {
-  "tsc-watch": "tsc"
+  "tsc-watch": "tsc --watch"
 },
 
 
 {
-  "compilerOptions": {
+  "compilerOptions": {||
     "target": "ES2015",
     "outDir": "public/dist",
     "watch": true
