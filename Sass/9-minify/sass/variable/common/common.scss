@@ -1,0 +1,18 @@
+@import "../colors/colors.scss";
+
+
+#title {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+button {
+    width: 70px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    background-color: $btn-background;
+
+}

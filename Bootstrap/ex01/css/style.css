@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/backgroundLp.png);
+  color: white;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+form {
+  max-width: 430px;
+}
+
+.container1 {
+  background-color: rgba(19, 18, 18, 0.9450980392);
+  width: 450px;
+  height: auto;
+}
+
+.logoTop {
+  width: 180px;
+}
+
+.btnRed {
+  color: #ff0043;
+  font-weight: 500;
+  border: 2px unset #ff0043;
+}
+.btnRed:hover {
+  transition: 1s;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+.btn, .btn-azul {
+  width: 140px;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.37);
+  display: block;
+  font-weight: 700;
+}
+.btn:hover, .btn-azul:hover {
+  cursor: pointer;
+  transition: 1s;
+}
+.btn.btn-roxo, .btn-roxo.btn-azul {
+  color: white;
+  background-color: purple;
+}
+.btn.btn-amarelo, .btn-amarelo.btn-azul {
+  color: black;
+  background-color: yellow;
+}
+
+.btn-azul {
+  color: black;
+  background-color: lightblue;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+//criando o mixin, serve para mixar informações
+
+@mixin text-style($color,$font-size,$font-family){
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+    
+}
+
+.texts{
+    h1{
+
+    }
+    p{
+
+    }
+}
+
+
+ .texts{
+     h1{
+        //com mixin
+        @include text-style(#ff4043, 34px, Arial)
+     }
+     p{
+        //sem mixin
+         color: lightblue;
+         font-size: 22px;
+         font-family: sans-serif;
+     }
+ }

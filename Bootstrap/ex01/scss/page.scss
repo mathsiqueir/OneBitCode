@@ -1,0 +1,38 @@
+@import './colors.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../img/backgroundLp.png);
+    color: white;
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+};
+form{
+    
+    max-width: 430px;
+    
+};
+.container1{
+    background-color: $background-color;
+    width: 450px;
+    height: auto;
+}
+.logoTop{
+    //logoOneBitCode
+    width: 180px;
+}
+.btnRed{
+    color: $button-color;
+    font-weight: 500;
+    border: 2px unset $button-color;
+
+    &:hover{
+        transition: 1s;
+    }
+}

@@ -1,0 +1,22 @@
+//nesting
+
+.classe1 {
+    ul {
+        background-color: #ff3030;
+    }
+
+    li {
+        background-color: aqua;
+    }
+
+    button {
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darkgray;
+            transition: 0.5s;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+stntactically awesme stylesheets
+
+node e npm
+
+4. sass --watch sass/style.scss:css/style.css`
+
+--watch <nome_pasta> / <nome_arquivo>:css/style.css
+
+que vai criar um nova pasta que vai modificar para css
