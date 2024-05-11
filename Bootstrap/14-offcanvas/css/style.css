@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #353d41;
+}
+
+.img {
+  width: 180px;
+}
+
+/*# sourceMappingURL=style.css.map */
