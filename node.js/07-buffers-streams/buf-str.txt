@@ -1,0 +1,21 @@
+streams divide em chunks que são pequenos pedaços
+
+ideal para otimizar operações em grandes volumes de dados e para otimizar e processar fluxos continuos
+
+tipo de strems:
+
+readable
+writeble
+duplex
+transform
+
+
+BUFFERS-
+areas temporarias, ficam normalmente na ram para armazenamento de dados binarios(bytes)
+
+possuem tamanhos fixos
+
+operações com BUFFERS
+escrita- adicionar dados ao BUFFERS
+leitura- extrair dados do buffer
+manipulações- é possivel realizar diversas operações diretamente em dados binários
