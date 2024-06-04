@@ -29,6 +29,7 @@ rl.on("close",()=>{
 
 rl.on('SIGINT', ()=>{
 	rl.question('deseja realmente sair? (s/n)', (answer)=>{
+		//remove os espaços em branco
 		if(answer.trim().toLowerCase === 's'){
 			process.exit(0)
 		}else{
