@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuáris</title>
+    <style>
+        body{
+            background-color: #0d0d24;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usuários Cadastrados</h1>
+    <ul>
+        <% users.forEach(user => { %>
+        <li><%= user.username  %></li>            
+        <% }); %>
+        <li></li>
+    </ul>
+</body>
+</html>

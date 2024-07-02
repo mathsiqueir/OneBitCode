@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de Registro</title>
+    <style>
+        body{
+            background-color: #0d0d24;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>preencha o formulario abaixo</h1>
+    <form action="/register" method="post">
+        <label for="username">Nome do Usuário: </label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="password">Senha: </label>
+        <input type="text" name="password" id="password">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
