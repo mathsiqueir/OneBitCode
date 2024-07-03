@@ -5,6 +5,7 @@
     /*não quebra de linha, largura mínima, não aceita margens verticais(top e bottom) apenas horizontais left e right*/
     margin-bottom: 200px;
     margin-left: 30px;
+    opacity: 1.0;
 
 }
 .block{
@@ -19,7 +20,10 @@
 }
 .flex{
     display: flex;
+    overflow: ;
 }
 .grid{
     display: grid;
+    font: ;
+    text-transform: ;
 }

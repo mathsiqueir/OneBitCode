@@ -1,0 +1,21 @@
+POST  http://localhost:3333/videos
+Content-Type: application/json
+
+
+{
+    "title": "title",
+    "description": "description",
+    "duration": 180
+}
+
+###
+
+POST  http://localhost:3333/videos
+Content-Type: application/json
+
+
+{
+    "title": "title",
+    "description": "description",
+    "duration": 180
+}
