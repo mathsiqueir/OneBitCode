@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import useCounter from './hooks/useCounter'
 
 //regra 1: Onde usar os hooks
-
+//regra 2: ordem dos hooks
 
 function App() {
   const counter = useCounter()
@@ -13,7 +12,7 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+        <a href="https://react.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
