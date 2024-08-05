@@ -2,16 +2,17 @@ const express = require('express')
 const uploadMiddlewares = require('./middlewares/upload-middleware')
 const app = express()
 const PORT = 3333
+
 app.use(express.static('public'))
 
 //nessa rota vai vir um campo de upload que vai vir apenas um arquivo('image')
 app.post('/uploads',uploadMiddlewares.single('image'),(req,res,)=>{
   console.log(req.file,req.body)
-  res.json('arquivo salvo com sucesso')
+  res.json({message: 'arquivo salvo com sucesso'})
 })
 
 
-app.listen(PORT,()=>{console.log(`servidor iniciado \nPORTA:http://localhost:${PORT}`)})
+app.listen(PORT,()=>{console.log(`servidor iniciado \nhttp://localhost:${PORT}`)})
 
 
 
