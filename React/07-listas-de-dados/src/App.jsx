@@ -85,21 +85,26 @@ let gameComponents = [];
 games.forEach((game) => {
   gameComponents.push(<h2>{game.title}</h2>);
 });
+// ...
 function App() {
   return (
-    <div className="app">
+    <div id="app" style={{padding:'0 4rem 4rem'}}>
       <h1>Meus Jogos</h1>
-      {games.map((game) => {
-        return(
-          <div className="">
-            <img src={game.coverImage} alt={game.title} />
-             <h2>{game.title}</h2>
-             <p>{game.description}</p>
+      <div style={{display: 'flex', flexWrap:'wrap', gap:'4rem'}}>
+        {games.map((game) => (
+          <div key={game.id}>
+            <img 
+            src={game.coverImage} 
+            alt={game.title}
+             style={{height:'30rem', width:'20rem',objectFit:'cover'}}
+            />
+            <h2>{game.title} ({game.releaseYear})</h2>
+            <p>{game.description}</p>
           </div>
-        )
-      })}
+        ))}
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
